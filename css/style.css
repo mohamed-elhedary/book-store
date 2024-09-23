@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #43AAAF;
+    --secondary-color: #eee;
+    --third-color: #948e8e;
+    --main-padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 70px;
+    padding: 10px;
+    margin-top: 0px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+
+
+.store-logo{
+    width: calc(100% / 3);
+    align-items: center;
+}
+
+.store-logo .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+header ul {
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    width: calc((100% / 3)*2);
+}
+
+.nav-list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    align-items: center;
+}
+
+.nav-list a:hover {
+    color: var(--third-color);
+}
+
+.active {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.hero {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.search-box {
+    position: relative;
+}
+.search-box ::after {
+    content: url("/images/search-interface-symbol.png");
+    font-family: FontAwesome;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: var(--primary-color);
+}
+.search-box input{
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    width: 600px;
+}
+
+.search-box input::placeholder {
+    color: var(--primary-color);
+    padding-left: 30px;
+}
+
+.search-box input:focus {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.search-box button {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.trend {
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+}
+.book-img {
+    width: 200px;
+    height: 250px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.book-img:hover {
+    transform: scale(1.1);
+}
+
+.book-list {
+    justify-content: space-evenly;
+}
+.book {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.books {
+    justify-content: center;
+}
+
+.book-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+.book .author {
+    color: var(--third-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.book .price {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0px;
+    color: var(--secondary-color);
+}
+
+.social-icons {
+    list-style: none;
+    justify-content: center; 
+}
+.social-icons li {
+    margin: 0 5px;
+}
